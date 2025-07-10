@@ -27,6 +27,8 @@ def clean_currency(value):
         return None
 df["total_sales"] = df["total_sales"].apply(clean_currency)
 
+df["sale_date"] = pd.to_datetime(df["sale_date"], errors="coerce")
+
 #  Drop rows with invalid data
 df = df.dropna(subset=["employee", "total_sales", "sale_date", "region"])
 
