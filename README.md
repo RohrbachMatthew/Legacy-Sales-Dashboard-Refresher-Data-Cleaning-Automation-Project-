@@ -21,7 +21,10 @@ A fully modular ETL pipeline built to ingest, clean, and analyze legacy sales da
 ## 📊 Sample Visualizations
 
 ![Sales by Region](reporting/sales_by_region.png)  
-*A breakdown of total sales grouped by region.*
+*Total sales grouped by region.*
 
 ![Monthly Sales Trend](reporting/monthly_sales_trend.png)  
-*Time-series visualization of monthly sales performance.*
+*Visualization of monthly sales performance.*
+
+![Sales Over Time](reporting/sales_over_time.png)
+*Visualization of total sales over time*

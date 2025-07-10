@@ -49,3 +49,17 @@ monthly_chart_path = os.path.join(output_dir, "monthly_sales_trend.png")
 plt.savefig(monthly_chart_path)
 plt.close()
 print("Saved chart:", monthly_chart_path)
+
+# Individual sales scatter plot
+plt.figure(figsize=(12, 6))
+sns.stripplot(x="sale_date", y='total_sales', data=df, hue="region", palette="tab10", jitter=0.25, dodge=True)
+plt.title("Sales over Time")
+plt.xlabel("Sale Date")
+plt.ylabel("Total Sales")
+plt.grid(True)
+plt.tight_layout()
+
+scatter_chart_path = os.path.join(output_dir, "sales_over_time.png")
+plt.savefig(scatter_chart_path)
+plt.close()
+print("saved chart", scatter_chart_path)
